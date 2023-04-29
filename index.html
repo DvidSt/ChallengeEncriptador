@@ -21,18 +21,19 @@
                 <h1 id="titulo">Proyecto Encriptador - David Soto</h1>
             </div>
         </header>
-
         <main>
 
             <textarea id="insertar" placeholder="Dijite el texto"></textarea>
 
             <section class="resultado">
-                <textarea placeholder="Ningun Mensaje fue encontrado...">resultado</textarea>
-                <button class="botones">Copiar</button>
+                <textarea id="salida" placeholder="Ningun Mensaje fue encontrado...">resultado</textarea>
+                <button class="botones" onclick="copiar()">Copiar</button>
             </section>
 
-            <button class="botones">Encriptar</button>
-            <button class="botones">Desencriptar</button>
+            <button  class="botones" onclick="encriptar()">Encriptar</button>
+            <button  class="botones" onclick="desencriptar()">Desencriptar</button>
+
+            <script src="scripts.js"></script>
         </main>
 
         <footer>

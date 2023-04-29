@@ -69,6 +69,16 @@ body{
     top: 10%;
     resize: none;
 }
+.resultado textarea:focus{
+    outline: none;
+}
+.resultado textarea::-moz-selection{
+    background-color: transparent;
+}
+.resultado textarea::selection{
+    background-color: transparent;
+}
+
 
 .resultado .botones{
     width: 60%;
