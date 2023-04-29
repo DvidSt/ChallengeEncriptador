@@ -1,0 +1,111 @@
+body{
+
+    font-family: 'Montserrat', sans-serif;
+    background: #F3F5FC;
+    width: 100%;
+    
+}
+  
+
+#logo{
+    display: block;
+    align-items: flex-start;
+    position: absolute;
+    width: 4vw;
+    height: 3vw;
+    left: 5%;
+    top: 5%;
+ 
+}  
+
+#titulo{
+    display: block;
+    align-items: flex-start;
+    position: absolute;
+    left: 8vw; 
+    top: 3.2vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#insertar{
+    background: #F3F5FC;
+    border: none;
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    height: 40%;
+    width: 40%;
+    font-size: 2vw;
+    border-radius: 0.5em;
+    resize: none;
+    color:#0A3871;
+    
+}
+
+.resultado{
+    position: absolute;
+    background: #fff;
+    border: none;
+    border-radius: 2em;
+    height: 80%;
+    width: 25%;
+    left: 70%;
+    top:10%;
+    align-items: center;
+    font-size: 1vw;
+    
+}
+
+.resultado textarea{
+    position: absolute;
+    align-items: center;
+    border: none;
+    font-size: 1.7em;
+    width: 80%;
+    left:10%;
+    height: 70%;
+    top: 10%;
+    resize: none;
+}
+
+.resultado .botones{
+    width: 60%;
+    left: 20%;
+    height: 10%;
+    top: 85%
+
+}
+
+.botones{
+    position: absolute;
+    background: #fff;
+    box-sizing: border-box;
+    border: 1px solid #0A3871;
+    border-radius: 1em ;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+.botones:hover{
+    background: #0A3871;
+    color: #F3F5FC;
+    transition: 800ms;
+}
+
+.resultado + button{
+    width: 18%;
+    left: 15%;
+    height: 8%;
+    top: 85%;
+    
+}
+
+.resultado + button + button{
+    width: 18%;
+    left: 35%;
+    height: 8%;
+    top: 85%;
+    
+}
+
