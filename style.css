@@ -12,9 +12,9 @@ body{
     align-items: flex-start;
     position: absolute;
     width: 4vw;
-    height: 3vw;
+    height: 2vw;
     left: 5%;
-    top: 5%;
+    top: 6%;
  
 }  
 
@@ -22,8 +22,8 @@ body{
     display: block;
     align-items: flex-start;
     position: absolute;
-    left: 8vw; 
-    top: 3.2vw;
+    left: 8%; 
+    top: 6.5%;
     font-size: 1.5vw;
     font-weight: bold;
     font-style: italic;
@@ -44,7 +44,29 @@ body{
     
 }
 
+#vacio{
+    position: absolute;
+    border: none;
+    height: 50%;
+    width: 80%;
+    left: 10%;
+    top:10%;
+}
+#nada{
+    position: absolute;
+    left: 15%;
+    top:60%;
+    font-size: 1.2vw;
+    color:#0A3871;
+}
+#nada+p{
+    position: absolute;
+    left: 15%;
+    top:65%;
+}
+
 .resultado{
+    
     position: absolute;
     background: #fff;
     border: none;
@@ -59,6 +81,7 @@ body{
 }
 
 .resultado textarea{
+    display: none;
     position: absolute;
     align-items: center;
     border: none;
@@ -86,6 +109,37 @@ body{
     height: 10%;
     top: 85%
 
+}
+
+#copiado{
+    
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    font-size: 1vw;
+    
+    text-align: center;
+    position: absolute;
+    border: 1px solid #000;
+    border-radius: 1vw;
+    background: #356cb0;
+    color:#fff;
+    box-shadow: 0px 0px 5px 5px #6089BA;
+
+    width: 30%;
+    left: 35%;
+    height: 7.5%;
+    top: 70%;
+}
+
+#alerta{
+    position: absolute;
+    font-size: 1vw;
+    width: 20%;
+    left: 16%;
+    height: 8%;
+    top: 80%;
 }
 
 .botones{
@@ -119,3 +173,190 @@ body{
     
 }
 
+
+@media screen and (max-width:1000px) {
+ 
+    body{
+
+        font-family: 'Montserrat', sans-serif;
+        background: #F3F5FC;
+        width: 100%;
+        
+    }
+      
+    
+    #logo{
+        display: block;
+        align-items: flex-start;
+        position: absolute;
+        width: 10vw;
+        height: 5vw;
+        left: 5%;
+        top: 6%;
+     
+    }  
+    
+    #titulo{
+        display: block;
+        align-items: flex-start;
+        position: absolute;
+        left: 12%; 
+        top: 7%;
+        font-size:3vw;
+        font-weight: bold;
+        font-style: italic;
+    }
+    
+    #insertar{
+        background: #F3F5FC;
+        border: 1px solid #000;
+        position: absolute;
+        left: 10%;
+        top: 20%;
+        height: 40%;
+        width: 80%;
+        font-size: 2vw;
+        border-radius: 0.5em;
+        resize: none;
+        color:#0A3871;
+        
+    }
+    .resultado{
+        
+        position: absolute;
+        background: #fff;
+        border: none;
+        border-radius: 2em;
+        height: 20%;
+        width: 80%;
+        left: 10%;
+        top:75%;
+        align-items: center;
+        font-size: 1vw;
+        
+    }
+    
+    #vacio{
+        display: none;
+       
+    }
+    #nada{
+        display: flex;
+        position: absolute;
+        left: 27%;
+        top:30%;
+        font-size: 2.5vw;
+        color:#0A3871;
+    }
+    #nada+p{
+        display: flex;
+        position: absolute;
+        left: 20%;
+        top:55%;
+        font-size: 1.8vw;
+    }
+    .resultado textarea{
+        display: none;
+        position: absolute;
+        align-items: center;
+        border: none;
+        font-size: 2em;
+        width: 80%;
+        left:10%;
+        height: 55%;
+        top: 12.5%;
+        resize: none;
+    }
+    .resultado textarea:focus{
+        outline: none;
+    }
+    .resultado textarea::-moz-selection{
+     
+        background-color: transparent;
+    }
+    .resultado textarea::selection{
+        background-color: transparent;
+    }
+    
+    
+    .resultado .botones{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        left: 40%;
+        height: 10%;
+        top: 80%;
+        font-size: 2em;
+
+    }
+    
+    #copiado{
+       
+        justify-content: center;
+        align-items: center;
+        
+    
+        font-size: 2vw;
+        
+        text-align: center;
+        position: absolute;
+        border: 1px solid #000;
+        border-radius: 1vw;
+        background: #356cb0;
+        color:#fff;
+        box-shadow: 0px 0px 5px 5px #6089BA;
+    
+        width: 20%;
+        left: 40%;
+        height: 10%;
+        top: 40%;
+    }
+    
+    #alerta{
+        display: none;
+        position: absolute;
+        font-size: 1vw;
+        width: 20%;
+        left: 16%;
+        height: 8%;
+        top: 80%;
+    }
+    
+    .botones{
+       
+        position: absolute;
+        background: #fff;
+        box-sizing: border-box;
+        border: 1px solid #0A3871;
+        border-radius: 1em ;
+        font-size: 1.2vw;
+        cursor: pointer;
+    }
+    .botones:hover{
+        
+        background: #0A3871;
+        color: #F3F5FC;
+        transition: 800ms;
+    }
+    
+    .resultado + button{
+        width: 20%;
+        left: 20%;
+        height: 6%;
+        top: 65%;
+        font-size: 2vw;
+        
+    }
+    
+    .resultado + button + button{
+        
+        width: 20%;
+        left: 60%;
+        height: 6%;
+        top: 65%;
+        font-size: 2vw;
+        
+    }
+    
+}

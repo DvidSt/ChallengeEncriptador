@@ -1,13 +1,23 @@
 
 let entrada = document.getElementById("insertar");
 let salida = document.getElementById("salida");
-
-
+const vacio = document.getElementById("vacio");
+const nada = document.getElementById("nada");
+const pVacio = document.getElementById("pVacio");
+const copia = document.getElementById("copiar");
 
 
 
 
 function encriptar(){
+
+    if(entrada.value!=""){
+
+    salida.style.display = "flex";
+    vacio.style.display= "none";
+    nada.style.display= "none";
+    pVacio.style.display= "none";
+    copia.style.display= "flex";
 
     let diccionarioEncriptar = {};
 
@@ -39,10 +49,17 @@ for(let i = 0; i<texto.length;i++){
 salida.value=resultado;
 
 entrada.value="";
-
+}
  }
 
 function desencriptar(){
+    if(entrada.value!=""){
+
+    salida.style.display = "flex";
+    vacio.style.display= "none";
+    nada.style.display= "none";
+    pVacio.style.display= "none";
+    copia.style.display= "flex";
 
     let texto=entrada.value;
     let resultado = "";
@@ -51,14 +68,18 @@ function desencriptar(){
     
     salida.value=resultado;
     entrada.value="";
-
+    }
 
 }
 
 function copiar(){
+    const mensaje = document.getElementById("copiado")
    salida.focus();
    document.execCommand('selectAll');
    document.execCommand('copy');
-   alert("Copiado al portapapeles")
+   
+    mensaje.style.display = "flex";
+
+   setTimeout(() =>  mensaje.style.display = "none", 1000);
    
 }

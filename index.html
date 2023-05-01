@@ -26,13 +26,20 @@
             <textarea id="insertar" placeholder="Dijite el texto"></textarea>
 
             <section class="resultado">
-                <textarea id="salida" placeholder="Ningun Mensaje fue encontrado...">resultado</textarea>
-                <button class="botones" onclick="copiar()">Copiar</button>
+                <textarea id="salida" placeholder="Ningun Mensaje fue encontrado..." readonly></textarea>
+                <button class="botones" id="copiar" onclick="copiar()">Copiar</button>
+                <span id="copiado">¡Copiado!</span>
+                <img  id="vacio" src="imagenes/Muñeco.png">
+                <span  id="nada">¡Ningun mensaje encontrado!</span>
+                <p id="pVacio">ingrese el texto que desea encriptar o desencriptar</p>
+                
             </section>
+            
+            
 
             <button  class="botones" onclick="encriptar()">Encriptar</button>
             <button  class="botones" onclick="desencriptar()">Desencriptar</button>
-
+            <p id="alerta"> 🛈 solo letras en minuscula sin acentos</p>
             <script src="scripts.js"></script>
         </main>
 
